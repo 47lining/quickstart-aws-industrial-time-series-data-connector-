@@ -159,6 +159,8 @@ Metadata:
         default: Remote Access CIDR
       DataTransportService:
         default: Data transport service
+      UseCustomDockerRepository:
+        default: Use Custom Docker Registry
       VPCCIDR:
         default: Existing VPC CIDR
       VPCID:
@@ -433,11 +435,13 @@ Parameters:
     Type: String
     Default: latest
   UseCustomDockerRepository:
-    Type: String
     AllowedValues:
-    - Yes
-    - No
-    Description: Indicates whether this deployment is a quickstart or not.
+      - Yes
+      - No
+    Default: No
+    Description: Whether use public docker images repository (DockerHub) to download docker images of the microservices
+      or use ECR from your own account, if you decide to customize your copy of this Quick Start.
+    Type: String
 Resources:
   WonderwareConnectorStack:
     Properties:

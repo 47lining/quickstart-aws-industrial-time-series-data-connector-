@@ -222,6 +222,8 @@ Metadata:
         default: WIS Domain User Password
       WISUser:
         default: WIS Domain User Name
+      UseCustomDockerRepository:
+        default: Use Custom Docker Registry
 Parameters:
   AFDomainName:
     Description: Domain name of the user who runs AF Server. This parameter is required
@@ -630,11 +632,13 @@ Parameters:
     Type: String
     Default: latest
   UseCustomDockerRepository:
-    Type: String
     AllowedValues:
-    - Yes
-    - No
-    Description: Indicates whether this deployment is a quickstart or not.
+      - Yes
+      - No
+    Default: No
+    Description: Whether use public docker images repository (DockerHub) to download docker images of the microservices
+      or use ECR from your own account, if you decide to customize your copy of this Quick Start.
+    Type: String
 Resources:
   PIConnectorStack:
     DependsOn:

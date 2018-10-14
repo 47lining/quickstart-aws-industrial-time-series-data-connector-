@@ -150,6 +150,8 @@ Metadata:
         default: Quick Start S3 Key Prefix
       RemoteAccessCIDR:
         default: Remote Access CIDR
+      UseCustomDockerRepository:
+        default: Use Custom Docker Registry
       VPCDefinition:
         default: VPC Definition
       WonderwareConnectorDockerTag:
@@ -432,12 +434,13 @@ Parameters:
     Description: Docker tag used to download Mosquitto Broker instance. Change if you decided to customize your copy
       of this Quick Start.
   UseCustomDockerRepository:
-    Type: String
     AllowedValues:
-    - Yes
-    - No
+      - Yes
+      - No
+    Default: No
     Description: Whether use public docker images repository (DockerHub) to download docker images of the microservices
       or use ECR from your own account, if you decide to customize your copy of this Quick Start.
+    Type: String
 Mappings:
   VPCDefinitions:
     QuickstartDefault:
