@@ -1,9 +1,9 @@
 configparser==3.5.0
-flask==0.12.2
+flask==0.12.4
 gevent==1.2.2
 gunicorn==19.7.1
 Flask-Injector==0.10.1
 injector==0.13.4
-requests==2.18.4
+requests==2.20.0
 warrant==0.6.1
 boto3==1.7.36
