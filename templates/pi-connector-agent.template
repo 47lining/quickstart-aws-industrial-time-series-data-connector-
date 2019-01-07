@@ -207,27 +207,27 @@ Parameters:
 Mappings:
   AWSAMIRegionMap:
     AMI:
-      WS2016: Windows_Server-2016-English-Full-Base-2017.11.29
+      WS2016: Windows_Server-2016-English-Full-Base
     us-east-1:
-      WS2016: ami-08910872
+      WS2016: ami-041114ddee4a98333
     us-east-2:
-      WS2016: ami-21587144
+      WS2016: ami-0170ffc1abff2ebdc
     us-west-2:
-      WS2016: ami-f6d8008e
+      WS2016: ami-019e99815e07ceb49
     eu-central-1:
-      WS2016: ami-da9b14b5
+      WS2016: ami-014b173b0f52c004e
     eu-west-1:
-      WS2016: ami-088f9db67b4afec52
+      WS2016: ami-0dad95819a9372f76
     eu-west-2:
-      WS2016: ami-78657b1c
+      WS2016: ami-06a27ce600d784c71
     ap-southeast-1:
-      WS2016: ami-870855e4
+      WS2016: ami-04385f3f533c85af7
     ap-southeast-2:
-      WS2016: ami-de5eabbc
+      WS2016: ami-02e3986f071e14a71
     ap-northeast-1:
-      WS2016: ami-ec279c8a
+      WS2016: ami-0f57a86f53aa1c4ea
     ap-northeast-2:
-      WS2016: ami-e8ef4986
+      WS2016: ami-05ec63f885e1c6f2a
 Resources:
   ConnectorLogGroup:
     Properties:
